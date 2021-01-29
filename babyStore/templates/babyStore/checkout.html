@@ -130,12 +130,16 @@
                 'Content-Type':'application/json',
                 'X-CSRFToken':csrftoken,
             },
-            body:JSON.stringify({'form':userFormData, 'shopping':shippingInfo})
+            body:JSON.stringify({'form':userFormData, 'shipping':shippingInfo})
         })
         .then((response) => response.json())
         .then((data) => {
             console.log('Success:', data);
             alert('Transaction Complete');
+
+            cart = {}
+           document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+
             window.location.href = "{% url 'store' %}"
         })
     }
