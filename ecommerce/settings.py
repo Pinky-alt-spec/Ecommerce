@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '=uxf+$2v3pimvg-7#*5a%)14qs)kg!fc5hrwmpe^ov-cwf*d(w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'little-ecommerce.herokuapp.com']
 
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -129,6 +129,6 @@ STATICFILES_DIRS = [
 
 # STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-MEDIA_URL ='/images/'
+MEDIA_URL ='/media/'
 
-MEDIA_ROOT =os.path.join(BASE_DIR, 'static/images')
+MEDIA_ROOT = 'media'
