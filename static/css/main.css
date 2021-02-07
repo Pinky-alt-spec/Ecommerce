@@ -34,11 +34,12 @@ h1,h2,h3,h4,h5,h6{
 #cart-icon{
 	width:35px;
 	display: inline-block;
-	margin-left: 1px;
+	margin-left: 97%;
+
 }
 
 #cart-total{
-    margin-left: 98px;
+    margin-left: 170%;
     margin-top: -45px;
 	display: block;
 	text-align: center;
@@ -94,8 +95,7 @@ h1,h2,h3,h4,h5,h6{
 .chg-quantity:hover{
 	opacity: .6;
 }
-
-
 .hidden{
 	display: none!important;
 }
+
