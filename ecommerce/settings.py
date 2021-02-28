@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '=uxf+$2v3pimvg-7#*5a%)14qs)kg!fc5hrwmpe^ov-cwf*d(w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'baby-stroller.herokuapp.com', 'www.babystroller.ml', 'babystroller.ml']
 
